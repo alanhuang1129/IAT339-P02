@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - Product Listing Page</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body class="mainPage">
+
+    <header>
+        <h1>P01 - Checkout Cart Page</h1>
+        <nav class="styleGuideNavWrapper">        
+            <a class = "navBTNDesign" href="index.html">Style Guide Main Page</a>
+            <a class = "navBTNDesign" href="product_listing.html">Product Listing Template</a>
+            <a class = "navBTNDesign" href="payment_form.html">Checkout Template</a>
+        </nav>
+        <section class="element">
+            <h2>Checkout Cart</h2>
+            <!--https://uxplanet.org/how-to-create-a-shopping-cart-ui-using-html-css-e5db3cd55aa0-->
+            
+            
+            <h4>CSS selector:</h4>
+            <p>.Title, .Checkout-Wrapper, .Checkout-Description, .Checkout-Image
+              <br>.Cart-Items, .Counter, .Button, .Remove, .Checkout-Action, .Subtotal, .Items
+            </p>
+    
+            <h4>Sample code:</h4>
+            <code>&lt;div class="Checkout-Wrapper"&gt;
+                <br>&nbsp;&lt;div class="Checkout-Header"&gt;
+                  <br>&nbsp;&nbsp;&lt;h3&gt;Shopping Cart&lt;/h3&gt;
+                  <br>&nbsp;&nbsp;&lt;h4 class="Checkout-Action"&gt;Remove all&lt;/h4&gt;
+                <br>&nbsp;&lt;/div&gt;
+                <br>&nbsp;&lt;div class="Cart-Items"&gt;
+                  <br>&nbsp;&nbsp;&lt;div class="Checkout-Image-Wrapper"&gt;
+                  <br>&nbsp;&nbsp;&lt;img class="Checkout-Image" src="https://m.media-amazon.com/images/I/61SZmxd7hwS._AC_UX679_.jpg" alt="Sayu Hoodie"&gt;
+                <br>&nbsp;&lt;/div&gt;
+                <br>&nbsp;&lt;div class="Checkout-Description"&gt;
+                  <br>&nbsp;&nbsp;&lt;h1 class="Title"&gt;MPHX Sayu Hoodie, Game Cosplay White Unisex Pullover Costume (with Keychain)&lt;/h1&gt;
+                  <br>&nbsp;&nbsp;&lt;/div&gt;
+                  <br>&nbsp;&nbsp;&lt;div class="Counter"&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&lt;div class="Button"&gt;+&lt;/div&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&lt;div class="Count"&gt;1&lt;/div&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&lt;div class="Button"&gt;-&lt;/div&gt;
+                  <br>&nbsp;&nbsp;&lt;/div&gt;
+                  <br>&nbsp;&nbsp;&lt;div class="Prices"&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&lt;div class="Amount"&gt;$31.07&lt;/div&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&lt;div class="Remove"&gt;Remove&lt;/div&gt;
+                  <br>&nbsp;&nbsp;&lt;/div&gt;
+                <br>&nbsp;&lt;/div&gt;
+                <br>&nbsp;&lt;hr&gt;
+                <br>&nbsp;&lt;div class="Checkout"&gt;
+                  <br>&nbsp;&nbsp;&lt;div class="Subtotal"&gt;Sub-Total&lt;/div&gt;
+                  <br>&nbsp;&nbsp;&lt;div class="Items"&gt;2 Items&lt;/div&gt;
+                  <br>&nbsp;&nbsp;&lt;div class="Total-Price"&gt;$42.06&lt;/div&gt;
+                  <br>&nbsp;&nbsp;&lt;button class="btnDesign"&gt;Checkout&lt;/button&gt;
+                <br>&nbsp;&lt;/div&gt;
+              <br>&lt;/div&gt;
+            </code>
+    
+            <h4>Rendered element:</h4> <br> 
+            <div class="Checkout-Wrapper">
+              <div class="Checkout-Header">
+                <h3>Shopping Cart</h3>
+                <h4 class="Checkout-Action">Remove all</h4>
+              </div>
+              <div class="Cart-Items">
+                <div class="Checkout-Image-Wrapper">
+                  <img class="Checkout-Image" src="https://m.media-amazon.com/images/I/61SZmxd7hwS._AC_UX679_.jpg" alt="Sayu Hoodie">
+                </div>
+                <div class="Checkout-Description">
+                  <h3 class="Title">MPHX Sayu Hoodie, Game Cosplay White Unisex Pullover Costume (with Keychain)</h3>
+                </div>
+                <div class="Counter">
+                  <div class="Button">+</div>
+                  <div class="Count">1</div>
+                  <div class="Button">-</div>
+                </div>
+                <div class="Prices">
+                  <div class="Amount">$31.07</div>
+                  <div class="Remove">Remove</div>
+                </div>
+              </div>
+              <div class="Cart-Items">
+                <div class="Checkout-Image-Wrapper">
+                  <img class="Checkout-Image" src="https://m.media-amazon.com/images/I/81JCbBdje8L._AC_UX679_.jpg" alt="Hu Tao Keychain">
+                </div>
+                <div class="Checkout-Description">
+                  <h3 class="Title">Hu Tao Keychain</h3>
+                </div>
+                <div class="Counter">
+                  <!--Styled in CSS later-->
+                  <div class="Button">+</div>
+                  <div class="Count">1</div>
+                  <div class="Button">-</div>
+                </div>
+                <div class="Prices">
+                  <div class="Amount">$10.99</div>
+                  <div class="Remove">Remove</div>
+                </div>
+              </div>
+              
+              <hr>
+              <div class="Checkout">
+                <div class="Subtotal">Sub-Total</div>
+                <div class="Items">2 Items</div>
+                <div class="Total-Price">$42.06</div>
+                <button class="btnDesign">Checkout</button>
+              </div>
+            </div>
+        </section>
+    
+    </header>
+
+
+
+  </body>

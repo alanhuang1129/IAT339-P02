@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - Genshin Impact Store Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="product_listing.html" rel="productListingPage">
+
+  </head>
+
+  <body class="mainPage">
+
+    <header>
+      <h1>P01 - Genshin Impact Store Style Guide</h1>
+
+      <p>Navigation Elements</p>
+
+
+      <!--Note: Product Listing, Payment Form, and Checkout Cart have their own pages
+      but they also have their own sections in the main Style Guide Page-->
+      <nav class="styleGuideNavWrapper">        
+        <a class = "navBTNDesign" href="#interactive_elements">Interactive Elements</a>
+        <a class = "navBTNDesign" href="#text_elements">Text Elements</a>
+        <a class = "navBTNDesign" href="#combined_elements">Combined Elements</a>
+        <a class = "navBTNDesign" href="product_listing.html">Product Listing Template</a>
+        <a class = "navBTNDesign" href="payment_form.html">Payment Form Template</a>
+        <a class = "navBTNDesign" href="checkout.html">Checkout Template</a>
+        <a class = "navBTNDesign" href="#citations">Citations</a>
+      </nav>
+
+
+      <h3>Brand Information & Styling Information</h3>
+      <section class="brandInformation">
+        <h4>Brand Information
+        </h4>
+        <p>This company sells merchandise from the anime-art style game, 
+          Genshin Impact.<br><br>
+          The merchandise can be anything from travel backpacks and clothing
+          to keychains and artwork.<br><br>
+          The targeted consumer base are generally students and players of the 
+          game, Genshin Impact.<br><br>
+          This company's products are enticing to most players of the game due to
+          the aesthetics of the products as well as the incentive of owning a merchandise
+          relating to the game's fanbase <br><br>
+
+        </p>
+
+        <h4>Styling Information
+        </h4>
+        <p>In the game, Genshin Impact, there are elements in the game with their 
+          respective colours (refer to the colour palette). <br><br>
+          All characters from the game have their own corresponding elements, and
+          the idea is to filter these characters by their elements and design the pages
+          according to the colour of their elements.<br><br>
+          For example, if a certain character's element is "pyro", then they can be found
+          through the search filter of "Pyro" and that page will have #EF6363(Pyro colour)
+          as the page's background colour.
+
+        </p>
+
+      </section>
+
+      <section class = palette>
+        <h3>Colour Palette</h3>
+        <div class="colourPalette">
+          <div class="anemo">
+            Anemo<br>#3EEFBA
+          </div>
+          <div class="pyro">
+            Pyro<br>#EF6363
+          </div>
+          <div class="hydro">
+            Hydro<br>#48A3F8
+          </div>
+          <div class="cryo">
+            Cryo<br>#75E7F6
+          </div>
+          <div class="electro">
+            Electro<br>#E86BE3
+          </div>
+          <div class="dendro">
+            Dendro<br>#4BF23C
+          </div>
+          <div class="geo">
+            Geo<br>#DAA540
+          </div>
+          <div class="defaultColour">
+            Default Page Colour<br>#FFF4C2
+          </div>
+        </div>
+      </section>
+
+      <section class="fontChoices">
+        <h3>Font types</h3>
+        <div class="MavenPro">
+          MavenPro used for Headers and Subheaders<br>
+          font-family name: maven
+        </div>
+        <div class="Klee-One-SemiBold">
+          Klee-One-SemiBold used for paragraphs<br>
+          font-family name: kleeSemiBold
+        </div>
+      </section>
+    </header>
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+      
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.inTextLink</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a class = "inTextLink" href="(link-url)">In-text Linking&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4> <br>
+        <a class = "inTextLink" href="https://www.w3schools.com/html/html_links.asp">In-text Linking</a>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.btnDesign</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="btnDesign"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4> <br>
+        <a class="btnDesign">Default Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <!--https://www.w3schools.com/tags/att_button_type.asp-->
+
+        <h4>CSS selector:</h4>
+        <p>.btnDesign</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;button class="btnDesign" type="submit" value="Submit">Submit&lt;/button&gt;</code>
+
+        <h4>Rendered element:</h4> <br>
+        <button class="btnDesign" type="submit" value="Submit">Submit</button>
+        <button class="btnDesign" type="reset" value="Reset">Reset</button>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label-->
+        <!--https://www.mikedane.com/web-development/css/styling-search-bar/-->
+        <h4>CSS selector:</h4>
+        <p>#searchBar</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div class="searchBarWrapper"&gt;
+          <br>&nbsp;&lt;img class ="searchIcon" src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png" style="width:1%"&gt;
+          <br>&nbsp;&lt;input placeholder="Search" type="text" id="searchBar" name="searchBar"&gt;&lt;br&gt;&lt;br&gt;
+          <br>&lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4> <br>
+        <div class="searchBarWrapper">
+          <img class ="searchIcon" src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png" style="width:1%" alt="Search Icon">
+          <!--<label for="searchBar">Search</label>-->
+          <input placeholder="Search" type="text" id="searchBar" name="searchBar"><br><br>
+        </div>
+      </section>
+
+
+      <section class="element">
+        <!--Important note I discovered while doing this.
+        If I want to get only one valid input,
+        assigning name and value tags are important-->
+        <h3>Radio Button with Label</h3>
+
+
+
+        <h4>CSS selector:</h4>
+        <p>.filterWrapper, .elementalFilterWrapper, .searchFilter</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div class="filterWrapper"&gt;
+          <br>&nbsp;&lt;p class="searchFilter"&gt;Search Filters&lt;/p&gt;
+          <br>&nbsp;&lt;input type="radio" id="backpacks" name="radioButtons" value="BACKPACK"&gt;
+          <br>&nbsp;&lt;label for="backpacks"&gt;Backpacks&lt;/label&gt;&lt;br&gt;
+          <br>&lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4> <br>
+        <div class="filterWrapper">
+          <p class="searchFilter">Search Filters</p>
+          <input type="radio" id="backpacks" name="radioButtons" value="BACKPACK">
+          <label for="backpacks">Backpacks</label><br>
+          <input type="radio" id="hoodies" name="radioButtons" value="HOODIES">
+          <label for="hoodies">Hoodies</label><br>
+          <input type="radio" id="t-shirts" name="radioButtons" value="T-SHIRTS">
+          <label for="t-shirts">T-Shirts</label><br>
+          <input type="radio" id="keychains" name="radioButtons" value="KEYCHAINS">
+          <label for="keychains">Keychains</label><br>
+          <input type="radio" id="artwork" name="radioButtons" value="ARTWORK">
+          <label for="artwork">Artwork</label><br>
+        </div>
+        <div class="elementalFilterWrapper">
+          <p class="searchFilter">Elemental Search Filters</p>
+          <input type="radio" id="pyro" name="radioButtons" value="PYRO">
+          <label for="pyro">Pyro</label><br>
+          <input type="radio" id="hydro" name="radioButtons" value="HYDRO">
+          <label for="hydro">Hydro</label><br>
+          <input type="radio" id="cryo" name="radioButtons" value="CRYO">
+          <label for="cryo">Cryo</label><br>
+          <input type="radio" id="anemo" name="radioButtons" value="ANEMO">
+          <label for="anemo">Anemo</label><br>
+          <input type="radio" id="electro" name="radioButtons" value="ELECTRO">
+          <label for="electro">Electro</label><br>
+          <input type="radio" id="geo" name="radioButtons" value="GEO">
+          <label for="geo">Geo</label><br>
+          <input type="radio" id="dendro" name="radioButtons" value="DENDRO">
+          <label for="dendro">Dendro</label><br>
+        </div>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.opacityHover</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="(webpage-url)"
+          class = "opacityHover"&gt;
+          <br>&nbsp;&lt;img src="(image-address-url)" alt="backpack merchandise"&gt;
+          <br>&lt;/a&gt;
+        </code>
+
+        <h4>Rendered element:</h4> <br>
+        <a href="https://www.aliexpress.com/item/1005004631097438.html?_randl_currency=CAD&_randl_shipto=CA&src=google&aff_fcid=8467683f928145ad91cfe0273f3f5271-1665098696754-02862-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=8467683f928145ad91cfe0273f3f5271-1665098696754-02862-UneMJZVf&terminal_id=86a28638c43743caa9e8e1cee1ec2867&afSmartRedirect=y"
+        class = "opacityHover">
+          <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRi369JYHIaTtR3c_AmIJocHxpw-2bUaDmBS27Mlt_aKiMRgjSmAmtRUfFTFCkROgatfV9jN6SHArv3FirgdS1EDVD--VyBYrCZvNwtKKps&usqp=CAE" alt="backpack merchandise">
+        </a>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>CSS selector:</h4>
+        <p>h3, h4, h5, h6</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h3&gt;First level heading&lt;/h3&gt;</code>
+
+        <h4>Rendered element:</h4> <br>
+        <h3>First level heading</h3>
+        <h4>Second</h4>
+        <h5>Third</h5>
+        <h6>Fourth</h6>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;
+          Package included:Sayu Hoodie*1+Sayu Keychain*1.&lt;/p&gt;
+        </code>
+
+        <h4>Rendered element:</h4> <br>
+        <p> Product Description: <br>
+          Package included:Sayu Hoodie*1+Sayu Keychain*1.<br>
+          About keychian size：the longest side is 6cm.<br>
+          Note: Do not bleach, do not dry clean, hang to dry, iron at low temperature<br>
+          Separate the white clothes from the dark clothes before laundering.<br>
+        </p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <!--https://www.w3schools.com/html/html_lists_ordered.asp-->
+        
+        <h4>CSS selector:</h4>
+        <p>ol, li</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;ol&gt;
+          <br>&nbsp;&lt;li&gt;Backpacks&lt;/li&gt;
+          <br>&lt;/ol&gt;
+        </code>
+
+        <h4>Rendered element:</h4> <br>
+        <ol>
+          <li>Backpacks</li>
+          <li>Hoodies</li>
+          <li>T-shirts</li>
+          <li>Keychains</li>
+          <li>Artwork</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <!--https://www.w3schools.com/css/css_navbar.asp-->
+
+        <h4>CSS selector:</h4>
+        <p>.navbar</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div class ="navbar"&gt;
+          <br>&nbsp;  &lt;ul&gt;
+          <br>&nbsp;&nbsp;  &lt;li&gt;&lt;a href=https://snowdropbrands.com>Home&lt;/a&gt;&lt;/li&gt;
+          <br>&nbsp;&lt;/ul&gt;
+          <br>&lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4> <br>
+        <div class ="navbar">
+          <ul>
+            <li><a href=https://snowdropbrands.com>Home</a></li>
+            <li><a href=https://snowdropbrands.com/collections/all>Products</a></li>
+            <li><a href=https://snowdropbrands.com/pages/our-story>Random Listing</a></li>
+            <li><a href=https://snowdropbrands.com/pages/contact-us>Contact Us</a></li>
+            <li><a href=https://snowdropbrands.com/pages/faq>FAQ</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+        <!--https://www.w3schools.com/howto/howto_css_product_card.asp-->
+        
+        <h4>CSS selector:</h4>
+        <p>.productsWrapper, .listing, .listingPicture, .listingItem</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div class="productsWrapper"&gt;
+          <br>&nbsp;&lt;div class="listing"&gt;
+          <br>&nbsp;&nbsp;&lt;img class="listingPicture" src="(image-address-url)" alt="Ayaka Venti Backpacks"&gt;
+          <br>&nbsp;&nbsp;&lt;h1 class="listingItem">Ayaka Venti Japanese Korean Style Travel Bag&lt;/h1&gt;
+          <br>&nbsp;&nbsp;&lt;p class="price"&gt;$42.30&lt;/p&gt;
+          <br>&nbsp;&nbsp;&lt;p&gt;&lt;button class="btnDesign" class="cartButton"&gt;Add to Cart&lt;/button>&lt;/p&gt;
+          <br>&nbsp;&lt;/div&gt;
+          <br>&lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4> <br>
+        <div class="productsWrapper">
+          <div class="listing">
+            <img class="listingPicture" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRi369JYHIaTtR3c_AmIJocHxpw-2bUaDmBS27Mlt_aKiMRgjSmAmtRUfFTFCkROgatfV9jN6SHArv3FirgdS1EDVD--VyBYrCZvNwtKKps&usqp=CAE" alt="Ayaka Venti Backpacks">
+            <h3 class="listingItem">Ayaka Venti Japanese Korean Style Travel Bag</h3>
+            <p class="price">$42.30</p>
+            <p><button class="btnDesign cartButton">Add to Cart</button></p>
+          </div>
+          <div class="listing">
+            <img class="listingPicture" src="https://m.media-amazon.com/images/I/61SZmxd7hwS._AC_UX679_.jpg" alt="MPHX Sayu Hoodie">
+            <h3 class="listingItem">MPHX Sayu Hoodie, Game Cosplay White Unisex Pullover Costume (with Keychain)</h3>
+            <p class="price">$31.07</p>
+            <p><button class="btnDesign cartButton">Add to Cart</button></p>
+          </div>
+          <div class="listing">
+            <img class="listingPicture" src="https://m.media-amazon.com/images/I/81JCbBdje8L._AC_UX679_.jpg" alt="Hu Tao Keychain">
+            <h3 class="listingItem">Hu Tao Keychain</h3>
+            <p class="price">$10.99</p>
+            <p><button class="btnDesign cartButton">Add to Cart</button></p>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.BillingInformation, .BillingInformation2, .CreditCardInformation, .CreditCardInformation2,
+          .inputWrapper, .label
+        </p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div class ="paymentform"&gt;
+            <br>&nbsp;&lt;h4&gt;Billing Information&lt;/h4&gt;
+            <br>&nbsp;&lt;div class="BillingInformation"&gt;
+              <br>&nbsp;&nbsp;&lt;div class="inputWrapper"&gt;
+                <br>&nbsp;&nbsp;&nbsp;&lt;label class="label" for="fullname"&gt;Full Name&lt;/label&gt;
+                <br>&nbsp;&nbsp;&nbsp;&lt;input type="text" id="fullname" placeholder="Full Name"&gt;
+              <br>&nbsp;&nbsp;&lt;/div&gt;
+            <br>&nbsp;&lt;/div&gt;
+          <br>&lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4> <br>
+        <div class ="paymentform">
+          <h4>Billing Information</h4>
+          <div class="BillingInformation">
+            <div class="inputWrapper">
+              <label class="label" for="fullname">Full Name</label>
+              <input type="text" id="fullname" placeholder="Full Name">
+            </div>
+            <div class="inputWrapper">
+              <label class="label" for="email">Email</label>
+              <input type="text" id="email" placeholder="Email">
+            </div>
+
+            <div class="inputWrapper">
+              <label class="label" for="address">Address</label>
+              <input type="text" id="address" placeholder="Address">
+            </div>
+          </div>
+          <div class="BillingInformation2">
+            <div class="inputWrapper">
+              <label class="label" for="city">City</label>
+              <input type="text" id="city" placeholder="City">
+            </div>
+
+            <div class="inputWrapper">
+              <label class="label" for="state">State</label>
+              <input type="text" id="state" placeholder="State">
+            </div>
+            <div class="inputWrapper">
+              <label class="label" for="zipcode">Zip</label>
+              <input type="text" id="zipcode" placeholder="Postal / Zip Code">
+            </div>
+          </div>
+          <h4>Credit Card Information</h4>
+          <div class="CreditCardInformation">
+            <div class="inputWrapper">
+              <label class="label" for="cardname">Name on Card</label>
+              <input type="text" id="cardname" placeholder="Name on Card">
+            </div>
+            <div class="inputWrapper">
+              <label class="label" for="cardnumber">Credit Card Number</label>
+              <input type="text" id="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+            </div>
+          </div>
+          <div class="CreditCardInformation2">
+            <div class="inputWrapper">
+              <label class="label" for="expiration">Expiration Date</label>
+              <input type="text" id="expiration" placeholder="MM/YY">
+            </div>
+            <div class="inputWrapper">
+              <label class="label" for="cvv">CVV</label>
+              <input type="text" id="cvv" placeholder="XXX">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="element">
+        <h2>Checkout Cart</h2>
+        <!--https://uxplanet.org/how-to-create-a-shopping-cart-ui-using-html-css-e5db3cd55aa0-->
+        
+        
+        <h4>CSS selector:</h4>
+        <p>.Title, .Checkout-Wrapper, .Checkout-Description, .Checkout-Image
+          <br>.Cart-Items, .Counter, .Button, .Remove, .Checkout-Action, .Subtotal, .Items
+        </p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div class="Checkout-Wrapper"&gt;
+            <br>&nbsp;&lt;div class="Checkout-Header"&gt;
+              <br>&nbsp;&nbsp;&lt;h3&gt;Shopping Cart&lt;/h3&gt;
+              <br>&nbsp;&nbsp;&lt;h4 class="Checkout-Action"&gt;Remove all&lt;/h4&gt;
+            <br>&nbsp;&lt;/div&gt;
+            <br>&nbsp;&lt;div class="Cart-Items"&gt;
+              <br>&nbsp;&nbsp;&lt;div class="Checkout-Image-Wrapper"&gt;
+              <br>&nbsp;&nbsp;&lt;img class="Checkout-Image" src="https://m.media-amazon.com/images/I/61SZmxd7hwS._AC_UX679_.jpg"&gt;
+            <br>&nbsp;&lt;/div&gt;
+            <br>&nbsp;&lt;div class="Checkout-Description"&gt;
+              <br>&nbsp;&nbsp;&lt;h1 class="Title"&gt;MPHX Sayu Hoodie, Game Cosplay White Unisex Pullover Costume (with Keychain)&lt;/h1&gt;
+              <br>&nbsp;&nbsp;&lt;/div&gt;
+              <br>&nbsp;&nbsp;&lt;div class="Counter"&gt;
+                <br>&nbsp;&nbsp;&nbsp;&lt;div class="Button"&gt;+&lt;/div&gt;
+                <br>&nbsp;&nbsp;&nbsp;&lt;div class="Count"&gt;1&lt;/div&gt;
+                <br>&nbsp;&nbsp;&nbsp;&lt;div class="Button"&gt;-&lt;/div&gt;
+              <br>&nbsp;&nbsp;&lt;/div&gt;
+              <br>&nbsp;&nbsp;&lt;div class="Prices"&gt;
+                <br>&nbsp;&nbsp;&nbsp;&lt;div class="Amount"&gt;$31.07&lt;/div&gt;
+                <br>&nbsp;&nbsp;&nbsp;&lt;div class="Remove"&gt;Remove&lt;/div&gt;
+              <br>&nbsp;&nbsp;&lt;/div&gt;
+            <br>&nbsp;&lt;/div&gt;
+            <br>&nbsp;&lt;hr&gt;
+            <br>&nbsp;&lt;div class="Checkout"&gt;
+              <br>&nbsp;&nbsp;&lt;div class="Subtotal"&gt;Sub-Total&lt;/div&gt;
+              <br>&nbsp;&nbsp;&lt;div class="Items"&gt;2 Items&lt;/div&gt;
+              <br>&nbsp;&nbsp;&lt;div class="Total-Price"&gt;$42.06&lt;/div&gt;
+              <br>&nbsp;&nbsp;&lt;button class="btnDesign"&gt;Checkout&lt;/button&gt;
+            <br>&nbsp;&lt;/div&gt;
+          <br>&lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4> <br> 
+        <div class="Checkout-Wrapper">
+          <div class="Checkout-Header">
+            <h3>Shopping Cart</h3>
+            <h4 class="Checkout-Action">Remove all</h4>
+          </div>
+          <div class="Cart-Items">
+            <div class="Checkout-Image-Wrapper">
+              <img class="Checkout-Image" src="https://m.media-amazon.com/images/I/61SZmxd7hwS._AC_UX679_.jpg" alt="Sayu Hoodie">
+            </div>
+            <div class="Checkout-Description">
+              <h3 class="Title">MPHX Sayu Hoodie, Game Cosplay White Unisex Pullover Costume (with Keychain)</h3>
+            </div>
+            <div class="Counter">
+              <div class="Button">+</div>
+              <div class="Count">1</div>
+              <div class="Button">-</div>
+            </div>
+            <div class="Prices">
+              <div class="Amount">$31.07</div>
+              <div class="Remove">Remove</div>
+            </div>
+          </div>
+          <div class="Cart-Items">
+            <div class="Checkout-Image-Wrapper">
+              <img class="Checkout-Image" src="https://m.media-amazon.com/images/I/81JCbBdje8L._AC_UX679_.jpg" alt="Hu Tao Keychain">
+            </div>
+            <div class="Checkout-Description">
+              <h3 class="Title">Hu Tao Keychain</h3>
+            </div>
+            <div class="Counter">
+              <!--Styled in CSS later-->
+              <div class="Button">+</div>
+              <div class="Count">1</div>
+              <div class="Button">-</div>
+            </div>
+            <div class="Prices">
+              <div class="Amount">$10.99</div>
+              <div class="Remove">Remove</div>
+            </div>
+          </div>
+          
+          <hr>
+          <div class="Checkout">
+            <div class="Subtotal">Sub-Total</div>
+            <div class="Items">2 Items</div>
+            <div class="Total-Price">$42.06</div>
+            <button class="btnDesign">Checkout</button>
+          </div>
+        </div>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+        <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label</li>
+        <li>https://www.w3schools.com/html/html_links.asp</li>
+        <li>https://www.w3schools.com/tags/att_button_type.asp</li>
+        <li>https://www.w3schools.com/tags/att_input_type_radio.asp</li>
+        <li>https://www.pinterest.ca/pin/594475219563703103</li>
+        <li>https://www.w3schools.com/html/html_lists_ordered.asp</li>
+        <li>https://www.w3schools.com/css/css_navbar.asp</li>
+        <li>https://www.w3schools.com/howto/howto_css_product_card.asp</li>
+        <li>https://uxplanet.org/how-to-create-a-shopping-cart-ui-using-html-css-e5db3cd55aa0</li>
+        <li>https://snowdropbrands.com/</li>
+        <li>https://www.youtube.com/watch?v=Hwq_Mr12bcI&ab_channel=DaniKrossing</li>
+        <li>https://codetheweb.blog/style-a-navigation-bar-css/</li>
+        <li>https://www.mikedane.com/web-development/css/styling-search-bar/</li>
+      </ul>
+
+    </section>
+
+
+
+  </body>
+</html>

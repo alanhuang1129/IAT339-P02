@@ -1,0 +1,449 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+/*Imported Font Families*/
+@font-face {
+  /*https://www.youtube.com/watch?v=Hwq_Mr12bcI&ab_channel=DaniKrossing*/
+  /*klee(regular) is currently not in use*/
+  src: url(fonts/KleeOne-Regular.ttf);
+  font-family: klee;
+}
+@font-face {
+  src: url(fonts/KleeOne-SemiBold.ttf);
+  font-family: kleeSemiBold;
+}
+@font-face {
+  src: url(fonts/MavenPro-VariableFont_wght.ttf);
+  font-family: maven;
+}
+
+* {
+  font-family: maven;
+}
+
+
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+h2 {
+  margin-top: 6rem;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+  font-family: kleeSemiBold;
+  max-width: 40rem;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+.mainPage {
+  background-color: #FFF4C2;
+}
+
+/*Navigation Selectors (Strictly only for this style guide)*/
+.styleGuideNavWrapper {
+  display: flex;
+}
+.navBTNDesign {
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  background-color: #E86BE3;
+  text-decoration: none;
+  color:#202020;
+}
+.navBTNDesign:hover, .navBTNDesign:focus {
+  background-color:#EF6363;
+  color:#202020;
+  cursor:pointer;
+}
+
+@media only screen and (max-width:40rem) {
+
+}
+
+/*Colour Palette Selectors*/
+.colourPalette {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.anemo {
+  margin-right:1rem;
+  padding: 2rem;
+  background-color: #3EEFBA;
+  border-radius: 1rem;
+  width: 3rem;
+  height: 3rem;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+}
+.pyro {
+  margin-right:1rem;
+  padding: 2rem;
+  background-color: #EF6363;
+  border-radius: 1rem;
+  width: 3rem;
+  height: 3rem;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+}
+.hydro {
+  margin-right:1rem;
+  padding: 2rem;
+  background-color: #48A3F8;
+  border-radius: 1rem;
+  width: 3rem;
+  height: 3rem;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+}
+.cryo {
+  margin-right:1rem;
+  padding: 2rem;
+  background-color: #75E7F6;
+  border-radius: 1rem;
+  width: 3rem;
+  height: 3rem;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+}
+.electro {
+  margin-right:1rem;
+  padding: 2rem;
+  background-color: #E86BE3;
+  border-radius: 1rem;
+  width: 3rem;
+  height: 3rem;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+}
+.dendro {
+  margin-right:1rem;
+  padding: 2rem;
+  background-color: #4BF23C;
+  border-radius: 1rem;
+  width: 3rem;
+  height: 3rem;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  
+}
+.geo {
+  margin-right:1rem;
+  padding: 2rem;
+  background-color: #DAA540;
+  border-radius: 1rem;
+  width: 3rem;
+  height: 3rem;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+}
+.defaultColour {
+  margin-right:1rem;
+  padding: 2rem;
+  background-color: #FFF4C2;
+  border-radius: 1rem;
+  width: 3rem;
+  height: 3rem;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid #555;
+}
+
+/*Font Choices Selectors */
+.fontChoices {
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+.MavenPro {
+  font-family: maven;
+  margin-bottom: 3rem;
+}
+.Klee-One-SemiBold {
+  font-family: kleeSemiBold;
+  margin-bottom: 3rem;
+}
+
+/*In-Text Link Selectors */
+.inTextLink {
+  text-decoration: none;
+  color:blue;
+}
+.inTextLink:hover, .inTextLink:focus {
+  text-decoration: underline;
+  color:#E86BE3;
+}
+
+/*Default Button Selectors*/
+
+.btnDesign {
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  background-color: #75E7F6;
+  text-decoration: none;
+}
+.btnDesign:hover, .btnDesign:focus {
+  background-color:#EF6363;
+  color:aqua;
+  cursor:pointer;
+}
+
+/*Main Navigation Selectors*/
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+/*Search Bar (text input field) Selectors */
+#searchBar {
+  background-color: #f5f5f5;
+}
+#searchBar:hover, #searchBar:focus{
+  background-color: white;;
+}
+
+/*Radio Button Filter Selectors */
+.filterWrapper{
+  padding:1rem;
+  width: 10rem;
+  background-color:#E86BE3;
+}
+.elementalFilterWrapper {
+  padding:1rem;
+  width: 10rem;
+  background-color:#75E7F6;
+}
+
+.searchFilter {
+  font-family: kleeSemiBold;
+}
+
+/*Image Selectors*/
+
+.opacityHover:hover, .opacityHover:focus, .listingPicture:hover, .listingPicture:focus {
+  opacity:50%;
+  cursor:pointer;
+}
+
+/*Product/Service Listing Selectors*/
+.productsWrapper {
+  padding:1rem;
+  background-color: #3EEFBA;
+  display: flex;
+}
+
+.listingPicture {
+  max-width: 20rem;
+  max-height: 20rem;
+}
+.listing {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+}
+.listingItem {
+  font-family:klee;
+  margin-top: -0.3rem;
+  max-width:20rem;
+  height:5rem;
+}
+.price {
+  margin-top:-1rem;
+}
+
+.listing img, .Checkout-Image img {
+  border: 0.2rem solid #555;
+}
+
+@media only screen and (max-width:80rem) {
+  .productsWrapper {
+    flex-direction: column;
+  }
+}
+
+
+
+/*Main Navigation Selectors */
+/*https://codetheweb.blog/style-a-navigation-bar-css/ */
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar *{
+  display: inline;
+  list-style-type: none;
+}
+
+.navbar li {
+  background-color: #75E7F6;
+  padding-left: 2rem;
+  padding-right:2rem;
+  padding-top:1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar li:hover, .navbar li:focus {
+  background-color: #EF6363;
+  
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/*Payment Form Selectors */
+
+.BillingInformation, .BillingInformation2, .CreditCardInformation, .CreditCardInformation2 {
+  display:flex;
+
+}
+
+.inputWrapper input {
+  background-color: #f5f5f5;
+}
+
+.inputWrapper input:hover, .inputWrapper input:focus {
+  background-color: white;
+}
+
+.inputWrapper {
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+.label {
+  padding-right:10rem;
+}
+
+@media only screen and (max-width:46rem) {
+  .BillingInformation, .BillingInformation2, 
+  .CreditCardInformation, .CreditCardInformation2 {
+    flex-direction:column;
+  }
+}
+
+/*Checkout Cart Selectors */
+
+.Title {
+  font-family: klee;
+}
+
+.Checkout-Wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  background-color: #E86BE3;
+}
+
+.Checkout-Description {
+  max-width:20rem;
+}
+
+.Checkout-Image {
+  max-width: 20rem;
+  max-height: 20rem;
+  border: 0.2rem solid #555;
+}
+
+.Cart-Items {
+  margin-bottom: 5rem;
+}
+.Counter {
+  margin-top:-1rem;
+  width:5%;
+  align-items:center;
+  display:flex;
+  justify-content: space-between;
+}
+
+.Button {
+    width:1.2rem;
+    height:1.2rem;
+    border-radius:50%;
+    background-color: #75E7F6;
+    display:flex;
+    font-family: maven;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    color:#202020;
+}
+.Button:hover {
+  background-color:#EF6363;
+}
+
+.Remove, .Checkout-Action {
+  width:5rem;
+  color:#EF6363;
+}
+
+.Remove:hover, .Remove:focus, .Checkout-Action:hover, .Checkout-Action:focus{
+  color:blue;
+  cursor:pointer;
+}
+.Subtotal {
+  font-size: 1.5rem;
+}
+.Items {
+  margin-bottom: 0.5rem;
+}
+
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(50,50,50);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(200,200,200);
+}
