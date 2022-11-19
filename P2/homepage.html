@@ -14,11 +14,11 @@
         <div class="navBarWrapper">
             <h1 class="brand">Genshin Brand</h1>
             <div class ="navbar">
-                <ul>
-                    <li><a class ="btnDesign" href="homepage.html">Home</a></li>
-                    <li><a class ="btnDesign" href="products.html">Products</a></li>
-                    <li><a class ="btnDesign" href="checkout.html">Checkout</a></li>
-                    <li><a class ="btnDesign" href="faq.html">FAQ</a></li>
+                <ul class="navSelection">
+                    <li class ="btnDesign navButton"><a href="homepage.html">Home</a></li>
+                    <li class ="btnDesign navButton"><a href="products.html">Products</a></li>
+                    <li class ="btnDesign navButton"><a href="checkout.html">Checkout</a></li>
+                    <li class ="btnDesign navButton"><a href="faq.html">FAQ</a></li>
                 </ul>
             </div>
             <div class="searchBarWrapper">
@@ -28,74 +28,95 @@
                 </div>
             </div>
         </div>
-        <div class="centerBody">
-            <div class="allFilters">
-                <div class="filterWrapper sidebar">
-                    <p class="searchFilter">Search Filters</p>
-                    <input type="radio" id="backpacks" name="radioButtons" value="BACKPACK">
-                    <label for="backpacks">Backpacks</label><br>
-                    <input type="radio" id="hoodies" name="radioButtons" value="HOODIES">
-                    <label for="hoodies">Hoodies</label><br>
-                    <input type="radio" id="t-shirts" name="radioButtons" value="T-SHIRTS">
-                    <label for="t-shirts">T-Shirts</label><br>
-                    <input type="radio" id="keychains" name="radioButtons" value="KEYCHAINS">
-                    <label for="keychains">Keychains</label><br>
-                    <input type="radio" id="artwork" name="radioButtons" value="ARTWORK">
-                    <label for="artwork">Artwork</label><br>
-                </div>
-                <div class="elementalFilterWrapper sidebar">
-                    <p class="searchFilter">Elemental Search Filters</p>
-                    <input type="radio" id="pyro" name="radioButtons" value="PYRO">
-                    <label for="pyro">Pyro</label><br>
-                    <input type="radio" id="hydro" name="radioButtons" value="HYDRO">
-                    <label for="hydro">Hydro</label><br>
-                    <input type="radio" id="cryo" name="radioButtons" value="CRYO">
-                    <label for="cryo">Cryo</label><br>
-                    <input type="radio" id="anemo" name="radioButtons" value="ANEMO">
-                    <label for="anemo">Anemo</label><br>
-                    <input type="radio" id="electro" name="radioButtons" value="ELECTRO">
-                    <label for="electro">Electro</label><br>
-                    <input type="radio" id="geo" name="radioButtons" value="GEO">
-                    <label for="geo">Geo</label><br>
-                    <input type="radio" id="dendro" name="radioButtons" value="DENDRO">
-                    <label for="dendro">Dendro</label><br>
+        <div class="rows">
+            <div class="centerBody">
+                <div class="allFilters">
+                    <div class="filterWrapper sidebar">
+                        <p class="searchFilter">Search Filters</p>
+                        <input type="radio" id="backpacks" name="radioButtons" value="BACKPACK">
+                        <label for="backpacks">Backpacks</label><br>
+                        <input type="radio" id="hoodies" name="radioButtons" value="HOODIES">
+                        <label for="hoodies">Hoodies</label><br>
+                        <input type="radio" id="t-shirts" name="radioButtons" value="T-SHIRTS">
+                        <label for="t-shirts">T-Shirts</label><br>
+                        <input type="radio" id="keychains" name="radioButtons" value="KEYCHAINS">
+                        <label for="keychains">Keychains</label><br>
+                        <input type="radio" id="artwork" name="radioButtons" value="ARTWORK">
+                        <label for="artwork">Artwork</label><br>
+                    </div>
+                    <div class="elementalFilterWrapper sidebar">
+                        <p class="searchFilter">Elemental Search Filters</p>
+                        <input type="radio" id="pyro" name="radioButtons" value="PYRO">
+                        <label for="pyro">Pyro</label><br>
+                        <input type="radio" id="hydro" name="radioButtons" value="HYDRO">
+                        <label for="hydro">Hydro</label><br>
+                        <input type="radio" id="cryo" name="radioButtons" value="CRYO">
+                        <label for="cryo">Cryo</label><br>
+                        <input type="radio" id="anemo" name="radioButtons" value="ANEMO">
+                        <label for="anemo">Anemo</label><br>
+                        <input type="radio" id="electro" name="radioButtons" value="ELECTRO">
+                        <label for="electro">Electro</label><br>
+                        <input type="radio" id="geo" name="radioButtons" value="GEO">
+                        <label for="geo">Geo</label><br>
+                        <input type="radio" id="dendro" name="radioButtons" value="DENDRO">
+                        <label for="dendro">Dendro</label><br>
 
-                    <a href="#" class="btnDesign searchButton">Search</a>
-                </div>
-            </div>
-            <div class="allListings">
-                <div class="productListings" id="mainListing">
-                    <div class="productsWrapper" id="mainListingWrapper">
-                        <div class="listing">
-                            <a href = "selectedproduct.html">
-                                <img class="homepageMainListingPicture" src="https://cdn.shopify.com/s/files/1/0508/7775/9669/products/O1CN01ixYoWF1v7IfeXIS0e__2208460416125_720x.png?v=1665005417" alt="Genshin Impact Baal Themed T-shirt">
-                            </a>
-                            <h3 class="listingItem" id="mainListingLabel">[OFFICIAL MERCHANDISE] <br>Genshin Impact Baal Themed T-shirt — $41.99</h3>
-                        </div>
+                        <a href="#" class="btnDesign searchButton">Search</a>
                     </div>
                 </div>
-                <div class="productListings sideListing" id="sideListing1">
-                    <div class="productsWrapper sideListingWrapper">
-                        <div class="listing">
-                            <img class="homepageSideListingPicture" src="https://cdn.shopify.com/s/files/1/0508/7775/9669/products/O1CN010S1bT21v7Ifhc48AJ__2208460416125_720x.png?v=1665143013" alt="Genshin Impact Baal Themed Cargo Shorts">
-                            <h3 class="listingItem sideListingLabel" id="sideListingLabel1">[OFFICIAL MERCHANDISE] Genshin Impact Baal Themed Cargo Shorts
-                            — $60.99</h3>
-                        </div>
+                <div class="mainContent">
+                    <div class="aboutSection">
+                        <h2>About Us</h2>
+                        <p class="aboutContent">
+                            We are a group of Genshin Impact (GI) enthusiasts who love the game as much as you do! Ever since the launch of GI in September, we discovered that there are many travelers out there who are keen to get their hands on the official merchandise but could not find a way around it. Thus, we created genshin.shop to help you get your favourite merchandise, fuss-free.
+                        </p>
+                        <h3>How do we price the items?</h3>
+                        <p class="aboutContent">
+                            Our main aim is to help travelers who want a simple way to get GI merchandise from the Official Flagship store in China. These include those who have trouble navigating TMall which is in Chinese, and those who are based in countries far from China (eg. EU & US) where the products are from. Hence, our pricing and shipping model is more catered towards such countries, whereby shipments to those areas are generally more expensive as compared to shipments to Southeast Asia (SEA) which are of much closer proximity to China. As such, the product pricing might be deemed as more expensive for people living in SEA.
+                        </p>
+                        <hr>
                     </div>
-                </div>
-                <div class="productListings sideListing" id="sideListing2">
-                    <div class="productsWrapper sideListingWrapper">
-                        <div class="listing">
-                            <img class="homepageSideListingPicture" src="https://cdn.shopify.com/s/files/1/0508/7775/9669/products/O1CN0159tfM21v7IfgogKiN__2208460416125_17cbe673-0241-4712-9835-cb54e6d15597_720x.png?v=1664814828" alt="Genshin Impact Frolicking Flame Yoimiya T-shirt">
-                            <h3 class="listingItem sideListingLabel" id="sideListingLabel2">[OFFICIAL MERCHANDISE] Genshin Impact Frolicking Flame Yoimiya T-shirt — $41.99</h3>
+                    <div class="allListings">
+                        <div class="productListings" id="mainListing">
+                            <div class="productsWrapper" id="mainListingWrapper">
+                                <div class="listing">
+                                    <a href = "selectedproduct.html">
+                                        <img class="homepageMainListingPicture" src="https://cdn.shopify.com/s/files/1/0508/7775/9669/products/O1CN01ixYoWF1v7IfeXIS0e__2208460416125_720x.png?v=1665005417" alt="Genshin Impact Baal Themed T-shirt">
+                                    </a>
+                                    <h3 class="listingItem" id="mainListingLabel">[OFFICIAL MERCHANDISE] <br>Genshin Impact Baal Themed T-shirt — $41.99</h3>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="productListings bottomListing" id="bottomListing">
-                    <div class="productsWrapper bottomListingWrapper">
-                        <div class="listing">
-                            <img class="homepageBottomListingPicture" src="https://cdn.shopify.com/s/files/1/0508/7775/9669/products/summerfantasiamat_720x.jpg?v=1664055699" alt="Genshin Impact Themed Mouse Mat 2.0">
-                            <h3 class="listingItem bottomListingLabel" id="bottomListingLabel">[OFFICIAL MERCHANDISE]<br>Genshin Impact Themed Mouse Mat 2.0 — $40.99</h3>
+                        <div class="productListings sideListing" id="sideListing1">
+                            <div class="productsWrapper sideListingWrapper">
+                                <div class="listing">
+                                    <a href = "selectedproduct.html">
+                                        <img class="homepageSideListingPicture" src="https://cdn.shopify.com/s/files/1/0508/7775/9669/products/O1CN010S1bT21v7Ifhc48AJ__2208460416125_720x.png?v=1665143013" alt="Genshin Impact Baal Themed Cargo Shorts">
+                                    </a>
+                                    <h3 class="listingItem sideListingLabel" id="sideListingLabel1">[OFFICIAL MERCHANDISE] Genshin Impact Baal Themed Cargo Shorts
+                                    — $60.99</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productListings sideListing" id="sideListing2">
+                            <div class="productsWrapper sideListingWrapper">
+                                <div class="listing">
+                                    <a href = "selectedproduct.html">
+                                        <img class="homepageSideListingPicture" src="https://cdn.shopify.com/s/files/1/0508/7775/9669/products/O1CN0159tfM21v7IfgogKiN__2208460416125_17cbe673-0241-4712-9835-cb54e6d15597_720x.png?v=1664814828" alt="Genshin Impact Frolicking Flame Yoimiya T-shirt">
+                                    </a>
+                                    <h3 class="listingItem sideListingLabel" id="sideListingLabel2">[OFFICIAL MERCHANDISE] Genshin Impact Frolicking Flame Yoimiya T-shirt — $41.99</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productListings bottomListing" id="bottomListing">
+                            <div class="productsWrapper bottomListingWrapper">
+                                <div class="listing">
+                                    <a href = "selectedproduct.html">
+                                        <img class="homepageBottomListingPicture" src="https://cdn.shopify.com/s/files/1/0508/7775/9669/products/summerfantasiamat_720x.jpg?v=1664055699" alt="Genshin Impact Themed Mouse Mat 2.0">
+                                    </a>
+                                    <h3 class="listingItem bottomListingLabel" id="bottomListingLabel">[OFFICIAL MERCHANDISE]<br>Genshin Impact Themed Mouse Mat 2.0 — $40.99</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

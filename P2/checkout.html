@@ -7,18 +7,18 @@
         <title>Genshin Impact Store Checkout</title>
 
         <link href="P1-Style-Guide/css/main.css" rel="stylesheet">
-        <link href="P2_css/css/homepage.css" rel="stylesheet">
+        <link href="P2_css/css/checkout.css" rel="stylesheet">
     </head>
 
-    <body class="Homepage mainPage">
+    <body class="ProductsPage mainPage">
         <div class="navBarWrapper">
             <h1 class="brand">Genshin Brand</h1>
             <div class ="navbar">
-                <ul>
-                    <li><a class ="btnDesign" href="homepage.html">Home</a></li>
-                    <li><a class ="btnDesign" href="products.html">Products</a></li>
-                    <li><a class ="btnDesign" href="checkout.html">Checkout</a></li>
-                    <li><a class ="btnDesign" href="faq.html">FAQ</a></li>
+                <ul class="navSelection">
+                    <li class ="btnDesign navButton"><a href="homepage.html">Home</a></li>
+                    <li class ="btnDesign navButton"><a href="products.html">Products</a></li>
+                    <li class ="btnDesign navButton"><a href="checkout.html">Checkout</a></li>
+                    <li class ="btnDesign navButton"><a href="faq.html">FAQ</a></li>
                 </ul>
             </div>
             <div class="searchBarWrapper">
@@ -28,5 +28,56 @@
                 </div>
             </div>
         </div>
+        <div class="Checkout-Wrapper">
+            <div class="Checkout-Header">
+              <h3>Shopping Cart</h3>
+              <h4 class="Checkout-Action">Remove all</h4>
+            </div>
+            <div class="Cart-Items">
+              <div class="Checkout-Image-Wrapper">
+                <img class="Checkout-Image" src="https://m.media-amazon.com/images/I/61SZmxd7hwS._AC_UX679_.jpg" alt="Sayu Hoodie">
+              </div>
+              <div class="Checkout-Description">
+                <h3 class="Title">MPHX Sayu Hoodie, Game Cosplay White Unisex Pullover Costume (with Keychain)</h3>
+              </div>
+              <div class="Counter">
+                <div class="Button">-</div>
+                <div class="Count">1</div>
+                <div class="Button">+</div>
+              </div>
+              <div class="Prices">
+                <div class="Amount">$31.07</div>
+                <div class="Remove">Remove</div>
+              </div>
+            </div>
+            <div class="Cart-Items">
+              <div class="Checkout-Image-Wrapper">
+                <img class="Checkout-Image" src="https://m.media-amazon.com/images/I/81JCbBdje8L._AC_UX679_.jpg" alt="Hu Tao Keychain">
+              </div>
+              <div class="Checkout-Description">
+                <h3 class="Title">Hu Tao Keychain</h3>
+              </div>
+              <div class="Counter">
+                <!--Styled in CSS later-->
+                <div class="Button">-</div>
+                <div class="Count">1</div>
+                <div class="Button">+</div>
+              </div>
+              <div class="Prices">
+                <div class="Amount">$10.99</div>
+                <div class="Remove">Remove</div>
+              </div>
+            </div>
+            
+            <hr>
+            <div class="Checkout">
+              <div class="Subtotal">Sub-Total</div>
+              <div class="Items">2 Items</div>
+              <div class="Total-Price">$42.06</div>
+              <a href="payment.html">
+                <button class="btnDesign">Checkout</button>
+                </a>
+            </div>
+          </div>
     </body>
 </html>

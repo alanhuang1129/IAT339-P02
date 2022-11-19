@@ -1,0 +1,13 @@
+body {
+    margin:0;
+}
+
+.FAQTitle, .question, .answer{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.answer {
+    font-family: kleeSemiBold;
+}

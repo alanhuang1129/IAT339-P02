@@ -1,36 +1,17 @@
 .Homepage {
-    padding:0 rem;
-    margin:0rem;
-}
-.navBarWrapper {
-    background-color: white;
-    padding:1rem;
-    display:flex;
-    justify-content: center;
-    
-}
-
-.brand {
-    padding-left:2rem;
-    flex:1
-}
-.navbar {
-    padding-left:12rem;
-    flex:4;
-}
-.searchBarWrapper {
-    flex:1;
-}
-.searchComponent {
-    position:relative;
-    right:3rem;
-    top:3rem;
+    padding:0;
+    margin:0;
 }
 .allFilters input {
     margin-bottom:1rem;
 }
+.rows {
+    display:flex;
+    flex-direction: column;
+}
 .centerBody {
     display:flex;
+    position: relative;
 }
 .allFilters {
     height: 100vh;
@@ -42,10 +23,25 @@
     margin-left: 2.5rem;
 }
 
+.mainContent {
+    display:flex;
+    flex-direction: column;
+}
+
+.aboutSection {
+    text-align: center;
+    align-items: center;
+    position:relative;
+    left: 42%;
+}
+.aboutContent {
+    max-width:45.5rem;
+}
+
 .allListings {
     position:relative;
     left: 10rem;
-    bottom: 6rem;
+    bottom: 0;
 }
 .homepageMainListingPicture:hover, .homepageMainListingPicture:focus, 
 .homepageSideListingPicture:hover, .homepageSideListingPicture:focus,
@@ -145,4 +141,19 @@
     margin-top:-1.5rem;
     margin-left:5.7rem;
     text-align:center;
+}
+@media screen and (max-width:77rem) {
+    .aboutSection {
+        left:20%;
+        max-width: 30rem;
+    }
+    .allListings {
+        left:0;
+    }
+}
+@media screen and (max-width:50rem) {
+    .aboutSection {
+        left:0;
+        max-width: 30rem;
+    }
 }
