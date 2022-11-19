@@ -1,0 +1,159 @@
+.Homepage {
+    padding:0;
+    margin:0;
+}
+.allFilters input {
+    margin-bottom:1rem;
+}
+.rows {
+    display:flex;
+    flex-direction: column;
+}
+.centerBody {
+    display:flex;
+    position: relative;
+}
+.allFilters {
+    height: 100vh;
+}
+.sidebar {
+    height: 91vh;
+}
+.searchButton {
+    margin-left: 2.5rem;
+}
+
+.mainContent {
+    display:flex;
+    flex-direction: column;
+}
+
+.aboutSection {
+    text-align: center;
+    align-items: center;
+    position:relative;
+    left: 42%;
+}
+.aboutContent {
+    max-width:45.5rem;
+}
+
+.allListings {
+    position:relative;
+    left: 10rem;
+    bottom: 0;
+}
+.homepageMainListingPicture:hover, .homepageMainListingPicture:focus, 
+.homepageSideListingPicture:hover, .homepageSideListingPicture:focus,
+.homepageBottomListingPicture:hover, .homepageBottomListingPicture:focus{
+    opacity:80%;
+    cursor:pointer;
+}
+
+.homepageMainListingPicture {
+    width: 26rem;
+    height:27rem;
+    position:relative;
+    right:1.2rem;
+    bottom:2.2rem;
+}
+.homepageSideListingPicture {
+    width: 13rem;
+    height:13.5rem;
+    position:relative;
+    right:1.7rem;
+    bottom:2.75rem;
+}
+.homepageBottomListingPicture {
+    width: 32rem;
+    height:30rem;
+    position:relative;
+    left:3.8rem;
+    bottom:2.2rem;
+}
+
+#mainListing {
+    margin-left: 10rem;
+    position:relative;
+    right:7rem;
+    top:13rem;
+}
+
+
+#mainListingWrapper {
+    background-color: #E86BE3;
+    padding:0rem;
+    width: 28rem;
+    height: 29rem;
+    position:relative;
+    left:3rem;
+    top:1rem;
+}
+#mainListingLabel {
+    max-width:26rem;
+    margin-top:-1.3rem;
+    margin-left:-1.6rem;
+    text-align:center;
+}
+.sideListingWrapper {
+    background-color: #E86BE3;
+    padding:0rem;
+    width: 14rem;
+    height: 14.5rem;
+    position:relative;
+    left:3rem;
+    top:1rem;
+}
+.bottomListingWrapper {
+    padding:0rem;
+    width: 44rem;
+    height: 32rem;
+    position:relative;
+    left:8rem;
+    bottom:3rem;
+}
+#sideListing1{
+    margin-left: 10rem;
+    position:relative;
+    left:25rem;
+    bottom:20rem;
+}
+#sideListing2{
+    margin-left: 10rem;
+    position:relative;
+    left:25rem;
+    bottom:13rem;
+}
+#sideListingLabel1 {
+    max-width:15rem;
+    margin-top:-2.5rem;
+    margin-left:-2.3rem;
+    text-align:center;
+}
+#sideListingLabel2 {
+    max-width:15rem;
+    margin-top:-2.5rem;
+    margin-left:-2.3rem;
+    text-align:center;
+}
+.bottomListingLabel {
+    max-width:30rem;
+    margin-top:-1.5rem;
+    margin-left:5.7rem;
+    text-align:center;
+}
+@media screen and (max-width:77rem) {
+    .aboutSection {
+        left:20%;
+        max-width: 30rem;
+    }
+    .allListings {
+        left:0;
+    }
+}
+@media screen and (max-width:50rem) {
+    .aboutSection {
+        left:0;
+        max-width: 30rem;
+    }
+}

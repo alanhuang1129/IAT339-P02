@@ -1,0 +1,35 @@
+body{
+    margin:0;
+}
+.ProductsPage {
+    padding:0;
+    margin:0;
+}
+.allListingsWrapper {
+    padding:2rem;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+}
+.rowWrapper {
+    padding:2rem;
+    display:flex;
+    flex-direction: row;
+}
+.listingsWrapper {
+    padding:2rem;
+    margin:1rem;
+    background-color: #EF6363;
+    max-width:22rem;
+    max-height:35rem;
+}
+@media screen and (max-width: 86rem) {
+    .rowWrapper {
+        flex-direction: column;
+    }
+    .allListingsWrapper {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
